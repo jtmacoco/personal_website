@@ -5,9 +5,11 @@ import './globals.css'
 export default function Page() {
   return (
     <>
-      <Navbar/>
-      <Home/>
-      <Section2 />
+      <div className='relative'>
+        <Navbar/>
+        <Home/>
+        <Section2/>
+      </div>
     </>
   );
 }
