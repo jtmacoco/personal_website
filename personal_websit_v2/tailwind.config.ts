@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily:{
+         rob: ['var(--font-roboto)'],
+      },
        colors: {
         'sky-grey': '#717877',
       },
