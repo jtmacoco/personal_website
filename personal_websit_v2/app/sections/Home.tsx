@@ -1,11 +1,12 @@
-import Section2 from './section2';
 import '../globals.css'
-import Navbar from '../components/navbar';
+import { about } from '../constants/info';
 export default function Home() {
   return (
     <>
       <main className="home w-full h-full">
-        <h1>hi</h1>
+        <div className="relative container rounded">
+            <p className='text-white text-xl  '>{about}</p>
+        </div>
       </main>
     </>
   );

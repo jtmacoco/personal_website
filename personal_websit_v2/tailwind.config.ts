@@ -12,7 +12,7 @@ const config: Config = {
          rob: ['var(--font-roboto)'],
       },
        colors: {
-        'sky-grey': '#717877',
+        'sf-back': '#6C8BA0',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
