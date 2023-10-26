@@ -1,7 +1,6 @@
 "use client"
 import React from "react";
 import { navLinks } from "../constants/info";
-import { motion } from 'framer-motion';
 import Image from "next/image";
 import github from "../images/github_logo_white.png"
 import linkedin from "../images/linkedin_logo.png"
