@@ -21,10 +21,11 @@ export default function Home() {
     <>
       <main className="home w-full h-full">
         <div className='absolute top-40'>
+          {/*add personal photo here potentialy*/}
         </div>
         <div className="relative container">
-          <p className="text-white text-2xl text-center  pb-20 ">{text}</p>
-          <p className='text-white text-xl pb-20'>{about}</p>
+          <p className="text-white text-lg sm:text-2xl text-center  pb-20 ">{text}</p>
+          <p className='text-white text-md text-center sm:text-xl pb-20'>{about}</p>
         </div>
       </main>
     </>

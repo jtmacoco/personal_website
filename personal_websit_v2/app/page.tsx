@@ -7,8 +7,12 @@ export default function Page() {
     <>
       <div className='relative'>
         <Navbar/>
-        <Home/>
+        <div id="home">
+        <Home />
+        </div>
+        <div id="section2">
         <Section2/>
+</div>
       </div>
     </>
   );
