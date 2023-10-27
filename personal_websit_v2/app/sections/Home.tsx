@@ -21,7 +21,6 @@ export default function Home() {
     <>
       <main className="home w-full h-full">
         <div className='absolute top-40'>
-          <Image src={personalWeb} alt="personal_photo" width={250} height={250} className='mx-auto' />
         </div>
         <div className="relative container">
           <p className="text-white text-2xl text-center  pb-20 ">{text}</p>
