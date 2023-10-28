@@ -1,18 +1,18 @@
-import Section2 from './sections/section2';
 import Home from './sections/Home';
+import Skills from './sections/Skills';
 import Navbar from './components/navbar';
 import './globals.css'
 export default function Page() {
   return (
     <>
       <div className='relative'>
-        <Navbar/>
+        <Navbar />
         <div id="home">
-        <Home />
+          <Home />
         </div>
-        <div id="section2">
-        <Section2/>
-</div>
+        <div id="skills">
+          <Skills/>
+        </div>
       </div>
     </>
   );

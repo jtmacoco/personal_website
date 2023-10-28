@@ -50,6 +50,18 @@ body {
   background-size: 100% 2px;
 }
 
-.section2{
+.skills{
   height:100vh;
+  background-color: rgb(22, 22, 22);
+  background-size:cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skills-image{
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #ffffff;
 }
