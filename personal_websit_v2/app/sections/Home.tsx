@@ -42,12 +42,12 @@ export default function Home() {
           {/*add personal photo here potentialy*/}
         </div>
         <div className="relative container">
-          <div className="flex items-center justify-center mx-auto gap-4 pb-10">
+          <div className="flex items-center justify-center mx-auto gap-4 pb-4 sm:pb-10  sm:pt-0">
             <MyButton title="Resume"/>
             <MyButton title="Contact"/>
           </div>
-          <p className="text-white text-lg sm:text-2xl text-center  pb-20 ">{text}</p>
-          <p className='text-white text-md text-center sm:text-xl pb-20'>{about}</p>
+          <p className="text-white text-lg sm:text-2xl text-center  pb-10 sm:pb-20 ">{text}</p>
+          <p className='text-white text-md text-center sm:text-xl pb-10 sm:pb-20'>{about}</p>
         </div>
       </motion.main>
     </>
