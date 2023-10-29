@@ -67,12 +67,6 @@ export default function Navbar() {
                         <Image src={linkedin} alt="linkedin_logo" width={35} height={35} />
                     </Link>
                 </li>
-                <li>
-                    <Link href="/">
-                        <Image src={email} alt="email_logo" width={35} height={35} />
-                    </Link>
-                </li>
-
             </ul>
         </nav >
     );
