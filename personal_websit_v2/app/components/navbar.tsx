@@ -4,12 +4,13 @@ import { navLinks } from "../constants/info";
 import Image from "next/image";
 import github from "../images/github_logo_white.png"
 import linkedin from "../images/linkedin_logo.png"
-import email from "../images/email_logo.png"
+import { motion } from "framer-motion"
 import Link from 'next/link'
 import { FiMenu } from "react-icons/fi";
 import { VscChromeClose } from "react-icons/vsc";
 export default function Navbar() {
     const [close, setClose] = useState(false);
+    const [reload,setReload] = useState(true);
     const scrollToSection = (id: string): void => {
         const section = document.getElementById(id) as HTMLElement | null;
         if (section) {
@@ -21,6 +22,12 @@ export default function Navbar() {
         const updateClose = !close;
         setClose(updateClose);
         localStorage.setItem("close", JSON.stringify(updateClose))
+    }
+    const menuVariants = {
+        hidden: { x: 0 },
+        visible: { x: "-100%", 
+        transition: { delay: .5 },
+     }
     }
     return (
         <nav className="bg-black sticky top-0 z-50 h-14 flex items-center justify-center">
@@ -36,26 +43,6 @@ export default function Navbar() {
                     ))}
                 </ul>
             </div>
-
-            <div className="absolute left-4 sm:hidden">
-                <button onClick={toggleMenu}>
-                    <FiMenu size={30} color="white" className={`${close ? "hidden" : "block"}`} />
-                    <VscChromeClose size={30} color="white" className={`${!close ? "hidden" : "block"}`} />
-                </button>
-                <div
-                    className={`${!close ? "hidden" : "block"}`}>
-                    <ul className="justify-center items-center h-10 px-2 bg-black flex flex-row gap-4 rounded-md absolute top-12 ">
-                        {navLinks.map((link) => (
-                            <li key={link.id}
-                                className="nav-line">
-                                <button onClick={(e) => { e.preventDefault(); scrollToSection(link.id) }}>
-                                    {link.title}
-                                </button>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-            </div >
             <ul className="absolute right-5 flex flex-row gap-4">
                 <li>
                     <Link href="https://github.com/jtmacoco">
@@ -68,6 +55,31 @@ export default function Navbar() {
                     </Link>
                 </li>
             </ul>
+            <div className="absolute left-4 sm:hidden">
+                <button onClick={()=>{toggleMenu();setReload(false);}}>
+                    <FiMenu size={30} color="white" className={`${close ? "hidden" : "block"}`} />
+                </button>
+                <motion.div
+                    initial={"hidden"}
+                    animate={close ? "hidden" : "visible"}
+                    variants={menuVariants}
+                    className={`${reload ? "hidden":"block"} fixed top-0 left-0 bg-black bg-cover h-screen w-screen `}>
+                    <button onClick={toggleMenu} className="relative top-2 left-2">
+                        <VscChromeClose size={30} color="white" className={`${!close ? "hidden" : "block"}`} />
+                    </button>
+                    <ul className="pb-16 justify-center items-center flex flex-col gap-16 rounded-md my-auto h-screen">
+                        {navLinks.map((link) => (
+                            <li key={link.id}
+                                className="nav-line">
+                                <button onClick={(e) => { e.preventDefault(); scrollToSection(link.id); toggleMenu() }}>
+                                    {link.title}
+                                </button>
+                            </li>
+                        ))}
+                    </ul>
+                </motion.div>
+            </div >
+
         </nav >
     );
 }
