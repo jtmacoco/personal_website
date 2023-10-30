@@ -1,14 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-     module: {
-    rules: [
-      {
-        test: /\.node$/,
-        use: 'file-loader',
-      },
-      // ... other rules ...
-    ],
-  },
-}
+const nextConfig = {}
 
 module.exports = nextConfig
