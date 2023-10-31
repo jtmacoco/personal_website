@@ -2,6 +2,15 @@ import { projects } from "../constants/info"
 import Image from "next/image"
 import Link from "next/link"
 export default function Projects() {
+    const hide = (title: string) => {
+        const titles = ["Plant Social"]
+        if (titles.includes(title)){
+            return 'hidden'
+        }
+        else{
+            return 'block'
+        }
+    }
     return (
         <main className="projects">
             <h1 className="relative pl-4 sm:pl-10 top-16 sm:top-24 sm:text-4xl">
@@ -20,7 +29,7 @@ export default function Projects() {
                                 <p className="pl-2 txt-md text-gray-400 py-1">
                                     {proj.tools}
                                 </p>
-                                <hr className="w-full h-px mx-auto  bg-gray-100 border-0 rounded"></hr>
+                                <hr className="w-full h-px mx-auto bg-gray-100 border-0 rounded"></hr>
                             </div>
                             <div className="flex items-center justify-center pt-2 text-bold">
                                 {proj.title}
@@ -28,8 +37,8 @@ export default function Projects() {
                             <div className="px-2 pt-1">
                                 {proj.description}
                             </div>
-                            <div className="absolute bottom-0 flex items-center justify-center mx-auto">
-                                <Link href={`${proj.github}`} target="_blank" className=" px-2 pt-2 border border-purple-800 text-purple-600">Github</Link>
+                            <div className={`${hide(proj.title)} absolute bottom-4 pl-4 flex items-center justify-center mx-auto`}>
+                                <Link href={`${proj.github}`} target="_blank" className=" px-2  border border-purple-800 text-purple-600">Github</Link>
                             </div>
                         </li>
                     </ul>

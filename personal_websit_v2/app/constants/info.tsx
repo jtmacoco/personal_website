@@ -112,7 +112,7 @@ export const projects = [
         h:"h-100",
         href:"/",
         github:"https://github.com/jtmacoco/Capstone",
-        tools:"django python docker tensorflow",
+        tools:"django python docker gcp",
     },
     {
         src: movieMatch,
