@@ -16,8 +16,8 @@ export default function Page() {
           <Skills />
         </div>
         <div id="projects">
-        <Projects/>
-</div>
+          <Projects />
+        </div>
       </div>
     </>
   );

@@ -26,8 +26,7 @@ export default function skills() {
                             custom={index}
                             key={s.title}>
                             <div className="skills-image mx-auto pt-3 sm:pt-4">
-                                <Image src={s.src} alt={s.title} 
-                                    className="mx-auto sm:h-14 sm:w-14 h-8 w-8"  />
+                                <Image src={s.src} alt={s.title}className="mx-auto sm:h-14 sm:w-14 h-8 w-8"  />
                             </div>
                             <p className="text-center">{s.title}</p>
                         </motion.li>

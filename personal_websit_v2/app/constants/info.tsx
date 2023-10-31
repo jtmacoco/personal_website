@@ -108,30 +108,38 @@ export const projects = [
     {
         src: stock_predictor,
         title: "Stock-Predictor",
-        description: "This project allows users to pick out any stock and get the predicted closing price for the next day. Users who create an account can also create and manage a personalized portfolio and track the performance of the predicted values versus the actual values. Django, Docker, Python, Tensorflow, HTML, Git, and GCP power this application. This project is no longer online due to cost, but the code can be re-deployed with GCP.",
+        description: "Users can view the predicted price for any stock and create a personal portfolio, allowing them to keep track of their portfolio data and compare the predicted portfolio price vs the actual portfolio price.",
         h:"h-100",
-        href:"/"
+        href:"/",
+        github:"https://github.com/jtmacoco/Capstone",
+        tools:"django python docker tensorflow",
     },
     {
         src: movieMatch,
         title: "Movie Match",
-        description: "This project has users input movies, based on their input, will list users with similar interests. Users can chat with one another and view others' movie lists. This application uses React, Tailwind, Javascript, Git, and Firebase.",
+        description: "Users can sign up and create a movie list. Once users have a movie list, they will be shown a list of users whose movie interests match their own. Users also have the option to update their movie list and delete any unwanted conversation.",
         h:"h-100",
-        href:"https://project-moviematch.com/"
+        href:"https://project-moviematch.com/",
+        github:"https://github.com/jtmacoco/movie_match_v2",
+        tools:"react javascript firebase",
+
     },
     {
         src: plantSocial,
         title: "Plant Social",
-        description: "This application allows users to share pictures and information about plants. This application also allows users to scan plants to see what type of plant it is. The tools used in this project were  Flutter, Dart, Google Firebase, and TensorFlow.",
+        description: "The project allows users to share data and other plant information with people. Users can also take a picture of a plant, and the application will identify the plant type; if it is identified wrong, users may adjust it themselves.",
         h:"h-100",
-        href:"/plantSocial"
+        href:"/plantSocial",
+        github:"/plantSocial",
+        tools:"flutter dart firebase python",
     },
     {
         src: parallel,
         title: "Factoring a Large Semiprime",
         description: "For this project, I achieved speed up when finding the factors of a large semi-prime. This is the basic idea for cryptography strength used in the encryption and decryption of keys. This project's challenge is finding the original large primes used to produce the semi-prime. The tools that I used were C++ and OpenMP.",
         h:"h-30",
-        href:"/parallel"
-        
+        href:"/parallel",
+        github:"/parallel",
+        tools:"c++ openmp",
     }
 ];
