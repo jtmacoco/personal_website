@@ -17,7 +17,7 @@ export default function Projects() {
                 Projects
                 <div className="bg-white h-[4px] w-full" />
             </h1>
-            <div className="relative top-1/3 container flex items-center justify-center mx-auto gap-4  ">
+            <div className="relative top-1/4 sm:top-1/3 container flex items-center justify-center mx-auto gap-4  ">
                 <div className=" absolute right-2 bottom-[85%] pb-24 ">
                     <a href="#_" className="relative inline-flex items-center justify-center p-4 px-3 py-2 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-purple-500  shadow-md group">
                         <span className="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-purple-500 group-hover:translate-x-0 ease">
@@ -27,8 +27,8 @@ export default function Projects() {
                         <span className="relative invisible">Button Text</span>
                     </a>
                 </div>
-                {projects.slice(0, 3).map((proj) => (
-                    <ul className="border border-white h-[500px] w-[900px]">
+                {projects.slice(0, 3).map((proj,index) => (
+                    <ul className={`sm:${index < 3 ? "block": "hidden"} ${index < 1 ? "block":"hidden"} border border-white h-[450px] sm:h-[500px]  w-[400px] sm:w-[900px]`}>
                         <li key={proj.title}>
                             <Link href={`${proj.href}`} target="_blank">
                                 <Image src={proj.src} alt={proj.title} className={` `} />
