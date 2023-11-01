@@ -46,7 +46,7 @@ export default function Projects() {
                                 {proj.description}
                             </div>
                             <div className={`${hide(proj.title)} absolute bottom-4 pl-4 flex items-center justify-center mx-auto`}>
-                                <a href={`${proj.github}`} target="_blank" className="relative inline-flex items-center justify-start px-1 py-1 overflow-hidden transition-all bg-transparent hover:bg-white group">
+                                <a href="#_" className="relative inline-flex items-center justify-start px-1 py-1 overflow-hidden transition-all bg-transparent hover:bg-white group">
                                     <span className="w-48 h-48 rotate-[-40deg] bg-purple-600 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
                                     <span className="relative w-full text-left text-purple-600 transition-colors duration-300 ease-in-out group-hover:text-white">Github</span>
                                 </a>
