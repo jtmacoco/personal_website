@@ -4,10 +4,10 @@ import Link from "next/link"
 export default function Projects() {
     const hide = (title: string) => {
         const titles = ["Plant Social"]
-        if (titles.includes(title)){
+        if (titles.includes(title)) {
             return 'hidden'
         }
-        else{
+        else {
             return 'block'
         }
     }
@@ -24,7 +24,9 @@ export default function Projects() {
                 {projects.slice(0, 3).map((proj) => (
                     <ul className="border border-white h-[500px] w-[900px]">
                         <li key={proj.title}>
-                            <Image src={proj.src} alt={proj.title} className={` `} />
+                            <Link href={`${proj.href}`} target="_blank">
+                                <Image src={proj.src} alt={proj.title} className={` `} />
+                            </Link>
                             <div className="flex flex-col pt-1">
                                 <p className="pl-2 txt-md text-gray-400 py-1">
                                     {proj.tools}
