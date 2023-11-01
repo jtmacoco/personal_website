@@ -18,6 +18,11 @@ import stock_predictor from "../images/stock_predictor.png"
 import movieMatch from "../images/movie_match.png"
 import plantSocial from "../images/plant_social2.png"
 import parallel from "../images/parallels.png"
+import jcp_logo from "../images/jcp_logo.png";
+import jamba_log from "../images/jamba_logo.png";
+import macys_logo from "../images/macys_logo.png"
+import amazon_logo from "../images/amazon_logo.png"
+import remotask_logo from "../images/remotask_logo.png"
 export const navLinks = [
     {
         id: "home",
@@ -143,3 +148,72 @@ export const projects = [
         tools:"c++ openmp",
     }
 ];
+export const experience_info = [
+    {
+        title:"Computer Science Expert AI Training",
+        date:"May 2023 - present",
+        description:[
+            "Conducted Thorough code evaluations for optimal efficiency",
+            "Proficiently trained machine learning models using python",
+            "Created comprehensive documentation and delivered lucid explanations of model outputs"
+        ],
+        src:remotask_logo,
+        py:"py-6",
+        location:"Remote",
+    },
+    {
+        title:"Warehouse Clerk",
+        date:"May 2021 - August 2021",
+        description:[
+            "Processed orders, prepared items for shipment, and packed products into bags according to procedures.",
+            "Maintained good communication and self-awareness to ensure the safety of self and coworkers"
+        ],
+        src:amazon_logo,
+        py:"py-6",
+        location:"San Leandro, CA"
+    },
+    {
+        title:"Warehouse Clerk",
+        date:"June 2019 - August 2019",
+        description:[
+            "Processed orders, prepared items for shipment, and packed products into bags according to procedures.",
+            "Maintained good communication and self-awareness to ensure the safety of self and coworkers"
+        ],
+        src:amazon_logo,
+        py:"py-6",
+        location:"San Leandro, CA"
+    }, 
+    {
+        title:"Sales Associate",
+        date:"May 2019 - July 2019",
+        description:[
+            "Processed orders, prepared items for shipment, and packed products into bags according to procedures.",
+            "Maintained good communication and self-awareness to ensure the safety of self and coworkers."
+        ],
+        src:macys_logo,
+        py:"py-6",
+        location:"San Leandro, CA"
+    },  
+    {
+        title:"Smooth Barista",
+        date:"March 2018 - June 2018",
+        description:[
+            "Provide excellent customer service and maintain positive relations with customers.",
+            "Prepared and served a variety of smoothies, juices, and snacks, adhering to quality and safety standards."
+        ],
+        src:jamba_log,
+        py:"py-4",
+        location:"Pleasanton, CA"
+    },    
+    {
+        title:"Sales Associate",
+        date:"November 2017 - June 2018",
+        description:[
+            "Handled cash transactions and maintained accurate registers, ensuring a smooth and error-free checkout process.",
+            "Collaborated with team members to achieve team sales goals, fostering a cooperative and supportive work environment."
+        ],
+        src:jcp_logo,
+        py:"py-6",
+        location:"Pleasanton, CA"
+    }, 
+]

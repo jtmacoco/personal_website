@@ -76,3 +76,10 @@ body {
   background-size:cover;
   background-repeat: no-repeat;
 }
+.experience{
+  height: 100vh;
+  background-position: 0 100%; 
+  background-color: rgb(22, 22, 22);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
