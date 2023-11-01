@@ -202,7 +202,7 @@ export const experience_info = [
             "Prepared and served a variety of smoothies, juices, and snacks, adhering to quality and safety standards."
         ],
         src:jamba_log,
-        py:"py-4",
+        py:"py-1",
         location:"Pleasanton, CA"
     },    
     {

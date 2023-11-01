@@ -1,29 +1,27 @@
-import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css';
+import * as React from "react";
 import { experience_info } from '../constants/info';
-
+import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
+import Image from "next/image";
+import { useInView } from "react-intersection-observer";
+import 'react-vertical-timeline-component/style.min.css';
+import TimelineElement from "../components/timeLineElement";
 export default function Experience() {
+    const { ref, inView } = useInView({
+        triggerOnce: true,
+    });
     return (
         <main className="experience">
             <h1 className="relative pl-4 sm:pl-10 top-16 sm:top-24 sm:text-4xl">
                 Experience
                 <div className="bg-white h-[4px] w-full"></div>
             </h1>
-            <VerticalTimeline>
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--work"
-                    contentStyle={{ background: '#111827', color: 'white' }}
-                    contentArrowStyle={{ borderRight: '7px solid rgb(33, 150, 243)' }}
-                    date="2011 - present"
-                    iconStyle={{ background: 'white', color: '#000' }}
-                >
-                    <h3 className="vertical-timeline-element-title">Creative Director</h3>
-                    <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-                    <p>
-                        Creative Direction, User Experience, Visual Design, Project Management, Team Leading
-                    </p>
-                </VerticalTimelineElement>
-            </VerticalTimeline>
+            <div className="pt-40 flex" ref={ref}>
+                <VerticalTimeline animate={true} className="vertical-timeline" layout="2-columns" lineColor="white" >
+                    {experience_info.map((info,index) => (
+                        <TimelineElement key={index} item={info}/>
+                    ))}
+                </VerticalTimeline>
+            </div>
         </main>
     )
 }

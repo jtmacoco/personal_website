@@ -14,7 +14,7 @@ export default function Navbar() {
     const scrollToSection = (id: string): void => {
         const section = document.getElementById(id) as HTMLElement | null;
         if (section) {
-            section.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" })
+            section.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" })
         }
         window.history.pushState(null, '', `#${id}`)//changes the url to the section id
     }
