@@ -4,7 +4,7 @@ import ProjectsPage from "./projectsPage";
 export default function Page() {
     return (
         <>
-        <NavbarPages/>
+            <NavbarPages />
             <ProjectsPage />
         </>
     )
