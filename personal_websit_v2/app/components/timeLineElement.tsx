@@ -30,9 +30,9 @@ export default function TimelineElement({ item }: TimelineElementProps) {
         visible={inView}
       >
         <h3 className="vertical-timeline-element-title font-bold pb-4 text-white">{item.title}</h3>
-        <ol className="marker:text-white list-disc pl-2">
+        <ol id="works bullet points" className="marker:text-white list-disc pl-2">
           {item.description.map((desc) => {
-            return <li className="text-white">{desc}</li>
+            return <li key="work desc" className="text-white">{desc}</li>
           })}
         </ol>
         <p className="text-white">location: {item.location}</p>

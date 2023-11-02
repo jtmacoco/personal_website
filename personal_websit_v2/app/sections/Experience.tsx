@@ -15,7 +15,7 @@ export default function Experience() {
                 Experience
                 <div className="bg-white h-[4px] w-full"></div>
             </h1>
-            <div className="pt-40 flex" ref={ref}>
+            <div id="verttimeline" className="pt-40 flex" ref={ref}>
                 <VerticalTimeline animate={true} className="vertical-timeline" layout="2-columns" lineColor="white" >
                     {experience_info.map((info,index) => (
                         <TimelineElement key={index} item={info}/>

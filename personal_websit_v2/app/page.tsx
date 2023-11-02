@@ -20,9 +20,8 @@ export default function Page() {
           <Projects />
         </div>
         <div id="experience">
-          <Experience/>
+          <Experience />
         </div>
- 
       </div>
     </>
   );
