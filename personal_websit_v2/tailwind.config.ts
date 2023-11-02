@@ -13,6 +13,7 @@ const config: Config = {
       },
        colors: {
         'sf-back': '#6C8BA0',
+        'background':'#161616'
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
