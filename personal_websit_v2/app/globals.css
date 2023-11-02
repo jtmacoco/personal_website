@@ -52,7 +52,7 @@ body {
 
 .skills{
   background-image: url("./images/vim.png");
-  height: 101vh;
+  height: 100vh;
   background-size:cover;
   background-repeat: no-repeat;
 }
