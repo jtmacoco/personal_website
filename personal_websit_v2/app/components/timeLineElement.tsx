@@ -25,7 +25,7 @@ export default function TimelineElement({ item }: TimelineElementProps) {
           background: '#5f5b6c	', color: 'white'
         }}
         iconStyle={{ background: 'white', color: '#000' }}
-        icon={<Image alt={item.title} src={item.src} className={`sm:${item.py} py-4`} />}
+        icon={<Image alt={item.title} src={item.src} className={`absolute top-1/3`} />}
         date={item.date}
         visible={inView}
       >

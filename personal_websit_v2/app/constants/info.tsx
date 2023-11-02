@@ -191,7 +191,7 @@ export const experience_info = [
             "Maintained good communication and self-awareness to ensure the safety of self and coworkers."
         ],
         src:macys_logo,
-        py:"py-6",
+        py:"py-8",
         location:"San Leandro, CA"
     },  
     {
@@ -202,7 +202,7 @@ export const experience_info = [
             "Prepared and served a variety of smoothies, juices, and snacks, adhering to quality and safety standards."
         ],
         src:jamba_log,
-        py:"py-1",
+        py:"py-6",
         location:"Pleasanton, CA"
     },    
     {

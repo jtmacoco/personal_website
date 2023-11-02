@@ -32,7 +32,7 @@ export default function Navbar() {
     return (
         <nav className="bg-black sticky top-0 z-50 h-14 flex items-center justify-center">
             <div className="sm:block hidden">
-                <ul className=" flex flex-row gap-4 ">
+                <ul key="navLinks reg" className=" flex flex-row gap-4 ">
                     {navLinks.map((link) => (
                         <li key={link.id}
                             className="nav-line">
@@ -43,7 +43,7 @@ export default function Navbar() {
                     ))}
                 </ul>
             </div>
-            <ul className="absolute right-5 flex flex-row gap-4">
+            <ul key="socials links" className="absolute right-5 flex flex-row gap-4">
                 <li>
                     <Link href="https://github.com/jtmacoco">
                         <Image src={github} alt="github_logo" width={35} height={35} />
@@ -67,7 +67,7 @@ export default function Navbar() {
                     <button onClick={toggleMenu} className="relative top-2 left-2">
                         <VscChromeClose size={30} color="white" className={`${!close ? "hidden" : "block"}`} />
                     </button>
-                    <ul className="pb-16 justify-center items-center flex flex-col gap-16 rounded-md my-auto h-screen">
+                    <ul key="nav-links mobile" className="pb-16 justify-center items-center flex flex-col gap-16 rounded-md my-auto h-screen">
                         {navLinks.map((link) => (
                             <li key={link.id}
                                 className="nav-line">
