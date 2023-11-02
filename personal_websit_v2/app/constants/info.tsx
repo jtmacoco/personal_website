@@ -18,11 +18,11 @@ import stock_predictor from "../images/stock_predictor.png"
 import movieMatch from "../images/movie_match.png"
 import plantSocial from "../images/plant_social2.png"
 import parallel from "../images/parallels.png"
-import jcp_logo from "../images/jcp_logo.png";
-import jamba_log from "../images/jamba_logo.png";
-import macys_logo from "../images/macys_logo.png"
+import jcp_logo from "../images/jcp_logo.svg";
+import macys_logo from "../images/macys_logo.svg"
 import amazon_logo from "../images/amazon_logo.png"
 import remotask_logo from "../images/remotask_logo.png"
+import jamba from "../images/jamba_logo.svg"
 export const navLinks = [
     {
         id: "home",
@@ -191,7 +191,7 @@ export const experience_info = [
             "Maintained good communication and self-awareness to ensure the safety of self and coworkers."
         ],
         src:macys_logo,
-        py:"py-8",
+        py:"py-0",
         location:"San Leandro, CA"
     },  
     {
@@ -201,8 +201,8 @@ export const experience_info = [
             "Provide excellent customer service and maintain positive relations with customers.",
             "Prepared and served a variety of smoothies, juices, and snacks, adhering to quality and safety standards."
         ],
-        src:jamba_log,
-        py:"py-6",
+        src:jamba,
+        py:"py-0",
         location:"Pleasanton, CA"
     },    
     {
@@ -213,7 +213,7 @@ export const experience_info = [
             "Collaborated with team members to achieve team sales goals, fostering a cooperative and supportive work environment."
         ],
         src:jcp_logo,
-        py:"py-6",
+        py:"py-0",
         location:"Pleasanton, CA"
     }, 
 ]

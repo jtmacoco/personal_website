@@ -25,12 +25,12 @@ export default function TimelineElement({ item }: TimelineElementProps) {
           background: '#5f5b6c	', color: 'white'
         }}
         iconStyle={{ background: 'white', color: '#000' }}
-        icon={<Image alt={item.title} src={item.src} className={`absolute top-1/3`} />}
+        icon={<Image alt={item.title} src={item.src} className={`${item.py} w-fit h-fit`} />}
         date={item.date}
         visible={inView}
       >
         <h3 className="vertical-timeline-element-title font-bold pb-4 text-white">{item.title}</h3>
-        <ol id="works bullet points" className="marker:text-white list-disc pl-2">
+        <ol className="marker:text-white list-disc pl-2">
           {item.description.map((desc) => {
             return <li key="work desc" className="text-white">{desc}</li>
           })}
