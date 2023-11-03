@@ -26,10 +26,15 @@ export default function PlantSocial() {
                     <div key={index}>
                         <div className="sm:px-0 px-4 grid grid-cols-3 sm:grid-cols-5 gap-4 flex items-center justify-center mx-auto relative top-28">
                             {info.images.map((image, i_index) => (
+                                <motion.div
+                                whileHover={{scale:1.3}}
+                                whileTap={{scale:1.3}}
+                                >
                                 <Image key={image.alt} src={image.src} alt={image.alt} />
+                                </motion.div>
                             ))}
                         </div>
-                        <div className="flex flex-col relative top-32 bg-background">
+                        <div className="flex flex-col relative top-36 sm:top-60 bg-background">
                             {info.desc.map((d, d_index) => (
                                 <p key={d_index} className="sm:px-0 px-4 py-4 text-xl">
                                     {d}
