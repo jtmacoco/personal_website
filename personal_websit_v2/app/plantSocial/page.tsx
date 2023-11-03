@@ -3,8 +3,10 @@ import PlantSocial from "./plant-social";
 export default function Page() {
     return (
         <>
-            <NavbarPages />
-            <PlantSocial/>
+            <div className="bg-background h-screen">
+                <NavbarPages />
+                <PlantSocial />
+            </div>
         </>
     )
 }
