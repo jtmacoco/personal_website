@@ -11,12 +11,11 @@ export default function Plant() {
 
             pathLength: 1,
             transition: {
-                duration: 2,
+                duration: 3,
                 ease: "easeInOut",
 
             },
             strokeWidth: 8,
-            strockeDasharray: "0 1 ",
         }
     }
     return (
@@ -85,9 +84,17 @@ export default function Plant() {
                     </g>
                 </g>
                 <g>
-                    <path className="st2" d="M901.35,817.99H636.84c-2.98,0-5.3,2.6-4.97,5.56l8.08,71.4c0.29,2.53,2.42,4.43,4.97,4.43h248.34
+                    <motion.path
+                        initial='hidden'
+                        animate='visible'
+                        variants={pathVariants}
+                        className="st2" d="M901.35,817.99H636.84c-2.98,0-5.3,2.6-4.97,5.56l8.08,71.4c0.29,2.53,2.42,4.43,4.97,4.43h248.34
 			c2.54,0,4.68-1.91,4.97-4.43l8.08-71.4C906.65,820.59,904.33,817.99,901.35,817.99z"/>
-                    <path className="st2" d="M646.63,916.72l21.88,142.14c0.38,2.44,2.47,4.24,4.94,4.24h191.29c2.47,0,4.56-1.8,4.94-4.24l21.88-142.14
+                    <motion.path
+                        initial='hidden'
+                        animate='visible'
+                        variants={pathVariants}
+                        className="st2" d="M646.63,916.72l21.88,142.14c0.38,2.44,2.47,4.24,4.94,4.24h191.29c2.47,0,4.56-1.8,4.94-4.24l21.88-142.14
 			c0.47-3.03-1.88-5.76-4.94-5.76H651.57C648.51,910.96,646.16,913.69,646.63,916.72z"/>
                 </g>
             </g>
