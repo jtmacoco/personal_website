@@ -23,6 +23,11 @@ import macys_logo from "../images/macys_logo.svg"
 import amazon_logo from "../images/amazon_logo.png"
 import remotask_logo from "../images/remotask_logo.png"
 import jamba from "../images/jamba_logo.svg"
+import plant_social_home from "../images/plant_social_home.png"
+import plant_social_login from "../images/plant_social_login.png"
+import plant_social_lookup from "../images/plant_social_lookup.png"
+import plant_social_main from "../images/plant_social_main.png"
+import plant_social_picture from "../images/plant_social_picture.png"
 export const navLinks = [
     {
         id: "home",
@@ -114,106 +119,139 @@ export const projects = [
         src: stock_predictor,
         title: "Stock-Predictor",
         description: "Users can view the predicted price for any stock and create a personal portfolio, allowing them to keep track of their portfolio data and compare the predicted portfolio price vs the actual portfolio price.",
-        h:"h-100",
-        href:"/",
-        github:"https://github.com/jtmacoco/Capstone",
-        tools:"django python docker gcp",
+        h: "h-100",
+        href: "/",
+        github: "https://github.com/jtmacoco/Capstone",
+        tools: "django python docker gcp",
     },
     {
         src: movieMatch,
         title: "Movie Match",
         description: "Users can sign up and create a movie list. Once users have a movie list, they will be shown a list of users whose movie interests match their own. Users also have the option to update their movie list and delete any unwanted conversation.",
-        h:"h-100",
-        href:"https://project-moviematch.com/",
-        github:"https://github.com/jtmacoco/movie_match_v2",
-        tools:"react javascript firebase",
+        h: "h-100",
+        href: "https://project-moviematch.com/",
+        github: "https://github.com/jtmacoco/movie_match_v2",
+        tools: "react javascript firebase",
 
     },
     {
         src: plantSocial,
         title: "Plant Social",
         description: "The project allows users to share data and other plant information with people. Users can also take a picture of a plant, and the application will identify the plant type; if it is identified wrong, users may adjust it themselves.",
-        h:"h-100",
-        href:"/plantSocial",
-        github:"/plantSocial",
-        tools:"flutter dart firebase python",
+        h: "h-100",
+        href: "/plantSocial",
+        github: "/plantSocial",
+        tools: "flutter dart firebase python",
     },
     {
         src: parallel,
         title: "Factoring a Large Semiprime",
         description: "For this project, I achieved speed up when finding the factors of a large semi-prime. This is the basic idea for cryptography strength used in the encryption and decryption of keys. This project's challenge is finding the original large primes used to produce the semi-prime. The tools that I used were C++ and OpenMP.",
-        h:"h-30",
-        href:"/parallel",
-        github:"/parallel",
-        tools:"c++ openmp",
+        h: "h-30",
+        href: "/parallel",
+        github: "/parallel",
+        tools: "c++ openmp",
     }
 ];
 export const experience_info = [
     {
-        title:"Computer Science Expert AI Training",
-        date:"May 2023 - present",
-        description:[
+        title: "Computer Science Expert AI Training",
+        date: "May 2023 - present",
+        description: [
             "Conducted Thorough code evaluations for optimal efficiency",
             "Proficiently trained machine learning models using python",
             "Created comprehensive documentation and delivered lucid explanations of model outputs"
         ],
-        src:remotask_logo,
-        py:"py-6",
-        location:"Remote",
+        src: remotask_logo,
+        py: "py-6",
+        location: "Remote",
     },
     {
-        title:"Warehouse Clerk",
-        date:"May 2021 - August 2021",
-        description:[
+        title: "Warehouse Clerk",
+        date: "May 2021 - August 2021",
+        description: [
             "Processed orders, prepared items for shipment, and packed products into bags according to procedures.",
             "Maintained good communication and self-awareness to ensure the safety of self and coworkers"
         ],
-        src:amazon_logo,
-        py:"py-6",
-        location:"San Leandro, CA"
+        src: amazon_logo,
+        py: "py-6",
+        location: "San Leandro, CA"
     },
     {
-        title:"Warehouse Clerk",
-        date:"June 2019 - August 2019",
-        description:[
+        title: "Warehouse Clerk",
+        date: "June 2019 - August 2019",
+        description: [
             "Processed orders, prepared items for shipment, and packed products into bags according to procedures.",
             "Maintained good communication and self-awareness to ensure the safety of self and coworkers"
         ],
-        src:amazon_logo,
-        py:"py-6",
-        location:"San Leandro, CA"
-    }, 
+        src: amazon_logo,
+        py: "py-6",
+        location: "San Leandro, CA"
+    },
     {
-        title:"Sales Associate",
-        date:"May 2019 - July 2019",
-        description:[
+        title: "Sales Associate",
+        date: "May 2019 - July 2019",
+        description: [
             "Processed orders, prepared items for shipment, and packed products into bags according to procedures.",
             "Maintained good communication and self-awareness to ensure the safety of self and coworkers."
         ],
-        src:macys_logo,
-        py:"py-0",
-        location:"San Leandro, CA"
-    },  
+        src: macys_logo,
+        py: "py-0",
+        location: "San Leandro, CA"
+    },
     {
-        title:"Smooth Barista",
-        date:"March 2018 - June 2018",
-        description:[
+        title: "Smooth Barista",
+        date: "March 2018 - June 2018",
+        description: [
             "Provide excellent customer service and maintain positive relations with customers.",
             "Prepared and served a variety of smoothies, juices, and snacks, adhering to quality and safety standards."
         ],
-        src:jamba,
-        py:"py-0",
-        location:"Pleasanton, CA"
-    },    
+        src: jamba,
+        py: "py-0",
+        location: "Pleasanton, CA"
+    },
     {
-        title:"Sales Associate",
-        date:"November 2017 - June 2018",
-        description:[
+        title: "Sales Associate",
+        date: "November 2017 - June 2018",
+        description: [
             "Handled cash transactions and maintained accurate registers, ensuring a smooth and error-free checkout process.",
             "Collaborated with team members to achieve team sales goals, fostering a cooperative and supportive work environment."
         ],
-        src:jcp_logo,
-        py:"py-0",
-        location:"Pleasanton, CA"
-    }, 
+        src: jcp_logo,
+        py: "py-0",
+        location: "Pleasanton, CA"
+    },
+]
+export const plant_social_info = [
+    {
+        desc: [
+            "This is plant social, and the project's goal is to create an app to provide information to users about plants, including information on how to care for a plant. The app will also provide a platform for users to interact with other users about sharing information on plants and to provide a service to exchange or give their plants to other users. Users can also take a picture of a plant, and the application will identify its type. The first picture says, \"Add plant type\" The app fills this in; if it is wrong, users can change the value.",
+            "This was a group project, and I was on both the software engineer and usability engineer teams. My contribution to this project was helping to design the application, helping develop the front end, and designing and implementing the database. For the database work, we used Firebase as it was easiest to implement with Flutter.",
+            "This project was developed in Flutter and uses Dart. The whole team had to learn Flutter and Dart during this project, as we needed to gain experience using these tools. To help maintain a clean and organized project, we each forked a main git repo with the working code. This allows us to work and then merge changes to the main repo individually. We also used the GitHub Kanban board to help with project management. During the development of this project, we would also have weekly scrum meetings to see where we are at with the project and how well this sprint is going. Toward the end, we did some user testing to see how well our application performed. Overall we could get a solid working application within a short period.",
+        ],
+        images: [
+            {
+                src:  plant_social_home ,
+                alt: "home"
+            },
+            {
+                src:  plant_social_login ,
+                alt: "login"
+
+            },
+            {
+                src:  plant_social_picture ,
+                alt: "picture"
+            },
+            {
+                src:  plant_social_lookup ,
+                alt: "lookup"
+            },
+            {
+                src:  plant_social_main ,
+                alt: "main"
+            },
+        ]
+    }
+
 ]
