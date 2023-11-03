@@ -3,15 +3,17 @@ import { motion } from "framer-motion"
 export default function Plant() {
     const pathVariants = {
         hidden: {
-            opacity:0,
+            opacity: 0,
             pathLength: 0
         },
         visible: {
-            opacity:1,
+            opacity: 1,
+
             pathLength: 1,
             transition: {
-                duration: 3,
+                duration: 2,
                 ease: "easeInOut",
+
             },
             strokeWidth: 8,
             strockeDasharray: "0 1 ",
