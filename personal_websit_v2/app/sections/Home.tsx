@@ -44,7 +44,7 @@ export default function Home() {
         <div className="relative container">
           <div className="flex items-center justify-center mx-auto gap-4 pb-4 sm:pb-10  sm:pt-0">
             <MyButton title="Resume" link="/resume"/>
-            <MyButton title="Contact" link="/"/>
+            <MyButton title="Contact" link="/contact"/>
           </div>
           <p className="text-white text-lg sm:text-2xl text-center  pb-10 sm:pb-20 ">{text}</p>
           <p className='text-white text-md text-center sm:text-xl pb-10 sm:pb-20'>{about}</p>

@@ -3,10 +3,10 @@ import PlantSocial from "./plant-social";
 export default function Page() {
     return (
         <>
-            <div className="bg-background bg-cover min-h-screen   ">
+            <main className="bg-background bg-cover min-h-screen   ">
                 <NavbarPages />
                 <PlantSocial />
-            </div>
+            </main>
         </>
     )
 }

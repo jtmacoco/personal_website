@@ -25,12 +25,13 @@ export default function PlantSocial() {
                 {plant_social_info.map((info, index) => (
                     <div key={index}>
                         <div className="sm:px-0 px-4 grid grid-cols-3 sm:grid-cols-5 gap-4 flex items-center justify-center mx-auto relative top-28">
-                            {info.images.map((image, i_index) => (
+                            {info.images.map((image) => (
                                 <motion.div
                                 whileHover={{scale:1.3}}
                                 whileTap={{scale:1.3}}
+                                key={image.alt}
                                 >
-                                <Image key={image.alt} src={image.src} alt={image.alt} />
+                                <Image src={image.src} alt={image.alt} />
                                 </motion.div>
                             ))}
                         </div>
