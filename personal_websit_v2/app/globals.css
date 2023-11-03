@@ -93,3 +93,6 @@ body {
   fill:#332923;
   stroke:#58483e;
 }
+textarea{
+  resize: both;
+}
