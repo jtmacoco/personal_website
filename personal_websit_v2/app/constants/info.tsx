@@ -118,11 +118,11 @@ export const projects = [
     {
         src: stock_predictor,
         title: "Stock-Predictor",
-        description: "Users can view the predicted price for any stock and create a personal portfolio, allowing them to keep track of their portfolio data and compare the predicted portfolio price vs the actual portfolio price.",
+        description: "Users can view the predicted price for any stock and create a personal portfolio, allowing them to keep track of their portfolio data and compare the predicted portfolio price vs the actual portfolio price. This is now hosted on a raspberry pi so depending or your location this may take time to load.",
         h: "h-100",
-        href: "/",
+        href: "https://www.stock-predictor.com/",
         github: "https://github.com/jtmacoco/Capstone",
-        tools: "django python docker gcp",
+        tools: "django python docker gcp/raspi-4",
     },
     {
         src: movieMatch,
