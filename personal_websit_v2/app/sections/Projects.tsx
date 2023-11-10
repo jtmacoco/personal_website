@@ -28,7 +28,7 @@ export default function Projects() {
                     </a>
                 </div>
                 {projects.slice(0, 3).map((proj,index) => (
-                    <ul key={index} className={`sm:${index < 3 ? "block": "hidden"} ${index < 1 ? "block":"hidden"} border border-white h-[450px] sm:h-[500px]  w-[400px] sm:w-[900px]`}>
+                    <ul key={index} className={`sm:${index < 3 ? "block": "hidden"} ${index < 1 ? "block":"hidden"} border border-white h-[502px] sm:h-[550px] w-[400px] sm:w-[900px]`}>
                         <li id="proj images" key={proj.title}>
                             <Link href={`${proj.href}`} target="_blank">
                                 <Image src={proj.src} alt={proj.title} className={` `} />
