@@ -13,14 +13,14 @@ export default function ProjectsPage() {
     }
     return (
         <main className="bg-background relative ">
-            <h1 className="pl-4 pb-4 sm:pb-0 sm:pl-10 top-16 sm:top-24 sm:text-4xl">
+            <h1 className="pl-4 pb-4 pt-4 sm:pt-0 sm:pb-0 sm:pl-10 top-16 sm:top-24 sm:text-4xl">
                 Projects
                 <div className="bg-white h-[4px] w-full" />
             </h1>
             <div className="flex sm:items-center sm:justify-center sm:h-screen">
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 container px-2">
                     {projects.map((proj, index) => (
-                        <ul key={index} className={`relative sm:block border border-white h-[450px] lg:h-[500px]`}>
+                        <ul key={index} className={`relative sm:block border border-white h-[490px] lg:h-[500px]`}>
                             <li id="proj images" key={proj.title}>
                                 <Link href={`${proj.href}`} target="_blank">
                                     <Image src={proj.src} alt={proj.title} className={` `} />
