@@ -18,6 +18,7 @@ import stock_predictor from "../images/stock_predictor.png"
 import movieMatch from "../images/movie_match.png"
 import plantSocial from "../images/plant_social2.png"
 import parallel from "../images/parallels.png"
+import personal_site from "../images/personal_site.png"
 import jcp_logo from "../images/jcp_logo.svg";
 import macys_logo from "../images/macys_logo.svg"
 import amazon_logo from "../images/amazon_logo.png"
@@ -151,6 +152,15 @@ export const projects = [
         href: "/parallel",
         github: "/parallel",
         tools: "c++ openmp",
+    },
+    {
+        src: personal_site,
+        title:"Personal Website" ,
+        description:"You have most likely been to my site this is here incase you would like to view the code I used to develop this site.",
+        h: "h-100",
+        href:"/",
+        github:"https://github.com/jtmacoco/personal_website_v2",
+        tools: "nextjs, typescript"
     }
 ];
 export const experience_info = [

@@ -4,8 +4,6 @@ import { about } from '../constants/info';
 import { motion, useAnimation } from "framer-motion"
 import { useInView } from "react-intersection-observer";
 import MyButton from '../components/myButton';
-import Image from "next/image";
-import personalWeb from "../images/personalWeb.png"
 import '../globals.css'
 export default function Home() {
   const controls = useAnimation();
@@ -36,7 +34,7 @@ export default function Home() {
         ref={ref}
         initial={{ opacity: 0 }}
         animate={controls}
-        transition={{ delay: .5 }}
+        transition={{ delay: 1 }}
         className="home w-full h-full">
         <div className='absolute top-40'>
           {/*add personal photo here potentialy*/}
