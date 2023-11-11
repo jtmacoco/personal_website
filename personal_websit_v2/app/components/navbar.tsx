@@ -68,7 +68,7 @@ export default function Navbar() {
                     <button onClick={toggleMenu} className="relative top-2 left-2">
                         <VscChromeClose size={30} color="white" className={`${!close ? "hidden" : "block"}`} />
                     </button>
-                    <ul  className="pb-16 justify-center items-center flex flex-col gap-16 rounded-md my-auto h-screen">
+                    <ul  className="pb-40 justify-center items-center flex flex-col gap-16 rounded-md my-auto h-screen">
                         {navLinks.map((link) => (
                             <li key={link.id}
                                 className="nav-line">
