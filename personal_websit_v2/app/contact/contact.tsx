@@ -130,7 +130,7 @@ export default function Contact() {
     return (
         <main>
             <motion.div 
-            initial={{opacity: !messageAlert ? 0:1}}
+            initial={{opacity:0}}
             animate={{opacity: messageAlert ? 1:0}}
             className="flex items-center justify-center">
                 <div className={`  w-52 z-50 absolute top-20 bg-blue-100 border-t border-b border-blue-500 text-blue-700 px-4  rounded-md flex flex-col  `}>
