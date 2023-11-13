@@ -119,7 +119,7 @@ export const projects = [
     {
         src: stock_predictor,
         title: "Stock-Predictor",
-        description: "Users can view the predicted price for any stock and create a personal portfolio, allowing them to keep track of their portfolio data and compare the predicted portfolio price vs the actual portfolio price. This is now hosted on a raspberry pi so depending or your location this may take time to load.",
+        description: "Users can check predicted stock prices, manage personal portfolios, track portfolio data, and compare predicted vs actual prices. Note: Due to hosting on a Raspberry Pi, loading times may vary based on your location.",
         h: "h-100",
         href: "https://www.stock-predictor.com/",
         github: "https://github.com/jtmacoco/Capstone",
@@ -160,7 +160,7 @@ export const projects = [
         h: "h-100",
         href:"/",
         github:"https://github.com/jtmacoco/personal_website_v2",
-        tools: "nextjs, typescript"
+        tools: "nextjs typescript"
     }
 ];
 export const experience_info = [

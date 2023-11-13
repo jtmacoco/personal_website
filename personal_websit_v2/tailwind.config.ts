@@ -8,12 +8,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      fontFamily:{
-         rob: ['var(--font-roboto)'],
+
+      fontFamily: {
+        rob: ['var(--font-roboto)'],
       },
-       colors: {
+      colors: {
         'sf-back': '#6C8BA0',
-        'background':'#161616'
+        'background': '#161616'
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
