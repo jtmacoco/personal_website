@@ -23,6 +23,7 @@ export default function skills() {
                             variants={fadInVariants}
                             initial="initial"
                             whileInView="animate"
+                            viewport={{ once: true }}
                             custom={index}
                             key={s.title}>
                             <div className="skills-image mx-auto pt-3 sm:pt-4">

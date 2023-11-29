@@ -15,7 +15,7 @@ interface TimelineElementProps {
 }
 export default function TimelineElement({ item }: TimelineElementProps) {
   const { ref, inView } = useInView({
-    triggerOnce: false,
+    triggerOnce: true ,
   });
 
   return (

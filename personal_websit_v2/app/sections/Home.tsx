@@ -7,15 +7,9 @@ import MyButton from '../components/myButton';
 import '../globals.css'
 export default function Home() {
   const controls = useAnimation();
-  const [ref, inView] = useInView()
   useEffect(() => {
-    if (inView) {
       controls.start({ opacity: 1 })
-    }
-    else {
-      controls.start({ opacity: 0 })
-    }
-  }, [controls, inView])
+  }, [controls])
   const [text, setText] = useState('');
   const delta = 100
   const hello = "\"Hello, I'm Jonathan Macoco a software developer.\"";
@@ -31,7 +25,6 @@ export default function Home() {
   return (
     <>
       <motion.main
-        ref={ref}
         initial={{ opacity: 0 }}
         animate={controls}
         transition={{ delay: 1 }}
