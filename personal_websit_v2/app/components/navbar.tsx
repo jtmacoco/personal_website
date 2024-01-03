@@ -15,7 +15,7 @@ export default function Navbar() {
         const section = document.getElementById(id) as HTMLElement | null;
         if (section) {
             const y = section.getBoundingClientRect().top + window.scrollY + 10 
-            window.scrollTo({top: y, behavior: 'smooth'});
+            window.scrollTo({top: y, behavior: 'smooth',});
         }
         window.history.pushState(null, '', `#${id}`)//changes the url to the section id
     }

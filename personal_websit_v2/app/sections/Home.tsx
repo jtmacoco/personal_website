@@ -11,7 +11,7 @@ export default function Home() {
       controls.start({ opacity: 1 })
   }, [controls])
   const [text, setText] = useState('');
-  const delta =  65 
+  const delta =  100 
   const hello = "\"Hello, I'm Jonathan Macoco a software developer.\"";
   const code_hello = `console.log(${hello})`;
   const tick = () => {
