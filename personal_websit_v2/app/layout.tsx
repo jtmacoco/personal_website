@@ -24,6 +24,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <Analytics />
+        <SpeedInsights/>
       </head>
       <body className={`${roboto.className}`}>
         {children}
