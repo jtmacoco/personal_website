@@ -2,7 +2,6 @@
 import { useEffect, useState } from 'react';
 import { about } from '../constants/info';
 import { motion, useAnimation } from "framer-motion"
-import { useInView } from "react-intersection-observer";
 import MyButton from '../components/myButton';
 import '../globals.css'
 export default function Home() {
