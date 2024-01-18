@@ -6,7 +6,7 @@ import Image from "next/image"
         initial: { opacity: 0, y: -150 },
         animate: (index: number) => ({
             opacity: 1, y: 0,
-            transition: { delay: 0.2 * index }
+            transition: { delay: 0.05 * index }
         }),
     }
 export default function skills() {
