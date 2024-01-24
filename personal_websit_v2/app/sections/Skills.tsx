@@ -3,10 +3,10 @@ import { skill } from "../constants/info"
 import { motion } from "framer-motion"
 import Image from "next/image"
     const fadInVariants = {
-        initial: { opacity: 0, y: -90 },
+        initial: { opacity: 0},
         animate: (index: number) => ({
-            opacity: 1, y: 0,
-            transition: { delay: 0.05 * index }
+            opacity: 1,
+            transition: { delay: 0.09 * index }
         }),
     }
 export default function skills() {
@@ -25,9 +25,10 @@ export default function skills() {
                             whileInView="animate"
                             viewport={{ once: true }}
                             custom={index}
-                            key={s.title}
-                            >
+                            key={s.title}>
+                            <div className="bg-white rounded-full h-12 w-12 sm:h-20 mx-auto sm:w-20 items-center justify-center flex">
                             <Image src={s.src} alt={s.title} className="mx-auto sm:h-14 sm:w-14 h-8 w-8" loading="lazy"  />
+</div>
                             <p className="text-center">{s.title}</p>
                         </motion.li>
                     ))}
