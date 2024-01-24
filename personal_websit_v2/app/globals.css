@@ -56,12 +56,6 @@ body {
   background-size:cover;
   background-repeat: no-repeat;
 }
-.skills-image{
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  background-color: #ffffff;
-}
 @media (max-width: 600px)
 {
   .skills-image{
