@@ -11,6 +11,8 @@ interface TimelineElementProps {
     src: StaticImageData;
     py: string;
     location: string;
+    bg:string;
+    company:string;
   };
 }
 export default function TimelineElement({ item }: TimelineElementProps) {
@@ -24,13 +26,14 @@ export default function TimelineElement({ item }: TimelineElementProps) {
         contentStyle={{
           background: '#5f5b6c	', color: 'white'
         }}
-        iconStyle={{ background: 'white', color: '#000' }}
+        iconStyle={{ background:item.bg, color: '#5546FF' }}
         icon={<Image alt={item.title} src={item.src}  />}
         iconClassName={`${item.py}  `}
         date={item.date}
         visible={inView}
       >
-        <h3 className="vertical-timeline-element-title font-bold pb-4 text-white">{item.title}</h3>
+        <h1 className="text-white pb-4">Company:<span className="font-bold"> {item.company}</span></h1>
+        <h3 className="vertical-timeline-element-title pb-4 text-white">{item.title}</h3>
         <ol className="marker:text-white list-disc pl-2">
           {item.description.map((desc) => {
             return <li key="work desc" className="text-white">{desc}</li>

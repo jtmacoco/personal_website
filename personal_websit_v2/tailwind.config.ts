@@ -11,6 +11,7 @@ const config: Config = {
 
       fontFamily: {
         rob: ['var(--font-roboto)'],
+        code: ["VT323"],
       },
       colors: {
         'sf-back': '#6C8BA0',

@@ -12,7 +12,7 @@ export default function Home() {
   const [text, setText] = useState('');
   const delta =  70 
   const hello = "\"Hello, I'm Jonathan Macoco a software developer.\"";
-  const code_hello = `console.log(${hello})`;
+  const code_hello = `> console.log(${hello})`;
   const tick = () => {
     let updateText = code_hello.substring(0, text.length + 1);
     setText(updateText)
@@ -36,7 +36,7 @@ export default function Home() {
             <MyButton title="Resume" link="/resume"/>
             <MyButton title="Contact" link="/contact"/>
           </div>
-          <p className="text-white text-lg sm:text-2xl text-center  pb-10 sm:pb-20 ">{text}</p>
+          <p className="text-white font-code text-lg sm:text-2xl text-center  pb-10 sm:pb-20 ">{text}</p>
           <p className='text-white text-md text-center sm:text-xl pb-10 sm:pb-20'>{about}</p>
         </div>
       </motion.main>

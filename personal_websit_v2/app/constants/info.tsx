@@ -21,14 +21,15 @@ import parallel from "../images/parallels.png"
 import personal_site from "../images/personal_site.png"
 import jcp_logo from "../images/jcp_logo.svg";
 import macys_logo from "../images/macys_logo.svg"
-import amazon_logo from "../images/amazon_logo.png"
-import remotask_logo from "../images/remotask_logo.png"
+import amazon_logo from "../images/amazon_logo.svg"
+import remotask_logo from "../images/remotask_logo.svg"
 import jamba from "../images/jamba_logo.svg"
 import plant_social_home from "../images/plant_social_home.png"
 import plant_social_login from "../images/plant_social_login.png"
 import plant_social_lookup from "../images/plant_social_lookup.png"
 import plant_social_main from "../images/plant_social_main.png"
 import plant_social_picture from "../images/plant_social_picture.png"
+import coinable from  "../images/coinable.svg"
 export const navLinks = [
     {
         id: "home",
@@ -165,6 +166,18 @@ export const projects = [
 ];
 export const experience_info = [
     {
+        title:"Full Stack Software Engineer",
+        date:"Febuary2024-present",
+        description:[
+           "I helped develop a crypto market place application. During my time as an intern I played a pivotal role in the redesign of the database and mobile architecture, focusing on normalizing the database and minimizing redundancy. Additionally I contributed to both front-end and back-end development efforts, also helping facilitate connectivity between the two." 
+        ],
+        src:coinable,
+        py: "py-1",
+        location:"Remote",
+        bg:"#5546FF",
+        company:"Coinable",
+    },
+    {
         title: "Computer Science Expert AI Training",
         date: "May 2023 - present",
         description: [
@@ -173,8 +186,10 @@ export const experience_info = [
             "Created comprehensive documentation and delivered lucid explanations of model outputs"
         ],
         src: remotask_logo,
-        py: "py-6",
+        py: "py-1",
         location: "Remote",
+        bg:"white",
+        company:"Remotasks",
     },
     {
         title: "Warehouse Clerk",
@@ -184,8 +199,10 @@ export const experience_info = [
             "Maintained good communication and self-awareness to ensure the safety of self and coworkers"
         ],
         src: amazon_logo,
-        py: "py-6",
-        location: "San Leandro, CA"
+        py: "py-1",
+        location: "San Leandro, CA",
+        bg:"white",
+        company:"Amazon",
     },
     {
         title: "Warehouse Clerk",
@@ -195,8 +212,10 @@ export const experience_info = [
             "Maintained good communication and self-awareness to ensure the safety of self and coworkers"
         ],
         src: amazon_logo,
-        py: "py-6",
-        location: "San Leandro, CA"
+        py: "py-1",
+        location: "San Leandro, CA",
+        bg:"white",
+        company:"Amazon",
     },
     {
         title: "Sales Associate",
@@ -206,8 +225,10 @@ export const experience_info = [
             "Maintained good communication and self-awareness to ensure the safety of self and coworkers."
         ],
         src: macys_logo,
-        py: "py-0",
-        location: "San Leandro, CA"
+        py: "py-6",
+        location: "San Leandro, CA",
+        bg:"white",
+        company:"Macy's",
     },
     {
         title: "Smooth Barista",
@@ -218,7 +239,9 @@ export const experience_info = [
         ],
         src: jamba,
         py: "py-0",
-        location: "Pleasanton, CA"
+        location: "Pleasanton, CA",
+        bg:"white",
+        company:"Jamba Juice",
     },
     {
         title: "Sales Associate",
@@ -228,8 +251,10 @@ export const experience_info = [
             "Collaborated with team members to achieve team sales goals, fostering a cooperative and supportive work environment."
         ],
         src: jcp_logo,
-        py: "py-0",
-        location: "Pleasanton, CA"
+        py: "py-6",
+        location: "Pleasanton, CA",
+        bg:"white",
+        company:"JCPenny",
     },
 ]
 export const plant_social_info = [
