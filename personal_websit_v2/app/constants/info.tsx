@@ -169,8 +169,8 @@ export const experience_info = [
         title:"Full Stack Software Engineer Intern",
         date:"Febuary2024-present",
         description:[
-           "I helped develop a crypto market place application. During my time as an intern I played a pivotal role in the redesign of the database and mobile architecture, focusing on normalizing the database and minimizing redundancy. Additionally I contributed to both front-end and back-end development efforts, also helping facilitate connectivity between the two." ,
-           "Additionally I contributed to both front-end and back-end development efforts. Utilizing Flutter for the frontend creating screens such as the signup and login ensuring a seamless experience for multiple platform",
+           "I helped develop a crypto market place application. During my time as an intern I played a pivotal role in the redesign of the database and mobile architecture, focusing on normalizing the database and minimizing redundancy.",
+           "Additionally I contributed to both front-end and back-end development efforts. Utilizing Flutter for the frontend creating screens such as the signup and login ensuring a seamless experience for multiple platform. On the backend I engineered a RESTful API using Node.js to communicate with the frontend.",
         ],
         src:coinable,
         py: "py-1",
