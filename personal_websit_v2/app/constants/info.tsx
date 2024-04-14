@@ -48,7 +48,7 @@ export const navLinks = [
         title: "Experience"
     }
 ];
-export const about = "I am a from the San Francisco Bay Area and have recently graduated from California State University, Chico, with a bachelor's degree in computer science.Throughout my academic journey, I have gained a significant understanding of agile project management, object-oriented programming, web development, machine learning, and parallel computing. My coursework and projects have provided me with hands-on experience with data manipulation and full-stack development, including web and mobile software applications.";
+export const about = "I am from the San Francisco Bay Area and am pursuing a master's degree in computer science at San Jose State University this coming fall, 2024. I obtained my bachelor's in computer science from Chico State in 2023. With the skills that I received from my undergraduate studies, I have found work as an AI generation trainer and a full-stack software engineer. My work and school experience helped me sharpen my technical skills and provided me with a deep understanding of agile project management, web/app development, data manipulation, and software architecture."
 
 export const skill = [
     {
