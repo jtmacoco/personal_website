@@ -246,7 +246,7 @@ export const experience_info = [
     },
     {
         title: "Sales Associate",
-        date: "November 2017 - June 2018",
+        date: "November 2017 - March 2018",
         description: [
             "Handled cash transactions and maintained accurate registers, ensuring a smooth and error-free checkout process.",
             "Collaborated with team members to achieve team sales goals, fostering a cooperative and supportive work environment."
