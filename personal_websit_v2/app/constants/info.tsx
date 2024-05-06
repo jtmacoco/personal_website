@@ -13,10 +13,10 @@ import react_logo from "../images/react_logo.svg"
 import python_logo from "../images/python_logo.svg"
 import aws from "../images/aws.svg"
 import tensorFlow_logo from "../images/tensorFlow_logo.svg"
-import linux_logo from "../images/linux_logo.svg"
-import stock_predictor from "../images/stock_predictor.png"
-import movieMatch from "../images/movie_match.png"
-import plantSocial from "../images/plant_social2.png"
+//import linux_logo from "../images/linux_logo.svg"
+import stock_predictor from "../images/stock_predictor.svg"
+import movieMatch from "../images/movie_match.svg"
+import plantSocial from "../images/plant_social2.svg"
 import parallel from "../images/parallels.png"
 import personal_site from "../images/personal_site.png"
 import jcp_logo from "../images/jcp_logo.svg";
@@ -30,6 +30,7 @@ import plant_social_lookup from "../images/plant_social_lookup.png"
 import plant_social_main from "../images/plant_social_main.png"
 import plant_social_picture from "../images/plant_social_picture.png"
 import coinable from  "../images/coinable.svg"
+import mongoDB_logo from "../images/mongoDB.svg"
 export const navLinks = [
     {
         id: "home",
@@ -100,8 +101,8 @@ export const skill = [
         title: "React"
     },
     {
-        src: linux_logo,
-        title: "Linux"
+        src: mongoDB_logo,
+        title: "mongoDB"
     },
     {
         src: aws,
@@ -169,8 +170,11 @@ export const experience_info = [
         title:"Full Stack Software Engineer Intern",
         date:"Febuary2024-present",
         description:[
-           "I helped develop a crypto market place application. During my time as an intern I played a pivotal role in the redesign of the database and mobile architecture, focusing on normalizing the database and minimizing redundancy.",
-           "Additionally I contributed to both front-end and back-end development efforts. Utilizing Flutter for the frontend creating screens such as the signup and login ensuring a seamless experience for multiple platform. On the backend I engineered a RESTful API using Node.js to communicate with the frontend.",
+           "Developed front and back end of a mobile application using Dart, Flutter, Node.js, AWS, and MongoDB",
+           "Implemented email verification system utilizing Amazon Simple Email Service, resulting in reliable and secure communication within seconds for a seamless user authentication across a large platform",
+           "Devised a RESTful API for efficient retrieval, storage, and updating of database records, delivering streamlined data management and scalability",
+           "Designed and Implemented database architecture in MongoDB resulting in efficient data management and organization",
+           "Created and managed a reverse proxy server using NGINX to efficiently route HTTPS requests to backend MongoDB database, optimizing performance and security",
         ],
         src:coinable,
         py: "py-1",
@@ -182,9 +186,9 @@ export const experience_info = [
         title: "Computer Science Expert AI Training",
         date: "May 2023 - present",
         description: [
-            "Conducted Thorough code evaluations for optimal efficiency",
-            "Proficiently trained machine learning models using python",
-            "Created comprehensive documentation and delivered lucid explanations of model outputs"
+            "Trained machine learning models on how to code in python and C, resolving issues that occur during training", 
+            "Conducted thorough code evaluations for optimal efficiency",
+            "Documented and delivered clear explanations of the model output",
         ],
         src: remotask_logo,
         py: "py-1",
