@@ -1,5 +1,6 @@
 import cLogo from "../images/cLogo.svg"
 import java_logo from "../images/java_logo.svg"
+import controller1 from "../images/controller_images/fusion1.png"
 import sql_logo from "../images/sql_logo.svg"
 import java_script_logo from "../images/java_script_logo.svg"
 import css_logo from "../images/css_logo.svg"
@@ -31,6 +32,7 @@ import plant_social_main from "../images/plant_social_main.png"
 import plant_social_picture from "../images/plant_social_picture.png"
 import coinable from  "../images/coinable.svg"
 import mongoDB_logo from "../images/mongoDB.svg"
+import { VscTools } from "react-icons/vsc"
 export const navLinks = [
     {
         id: "home",
@@ -118,6 +120,15 @@ export const skill = [
     }
 ]
 export const projects = [
+    {
+        src: controller1,
+        title: "Game Controller Attachment",
+        description:" Desgined a simple game controller that attaches to the back of a phone using mag safe magnets. This allows for users to play games similar to the Xperia phone.",
+        h:"h-60",
+        href:"https://www.thingiverse.com/thing:6760179",
+        github:"",
+        tools:"Fusion 360, 3d printer",
+    },
     {
         src: stock_predictor,
         title: "Stock-Predictor",

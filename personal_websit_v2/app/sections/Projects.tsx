@@ -3,7 +3,7 @@ import Image from "next/image"
 import Link from "next/link"
 export default function Projects() {
     const hide = (title: string) => {
-        const titles = ["Plant Social"]
+        const titles = ["Plant Social","Game Controller Attachment"]
         if (titles.includes(title)) {
             return 'hidden'
         }
@@ -32,7 +32,7 @@ export default function Projects() {
                         <ul key={index} className={`sm:${index < 3 ? "block" : "hidden"} ${index < 1 ? "block" : "hidden"} border border-white h-[495px]  2xl:h-[550px] w-[300px] sm:w-[900px]`}>
                             <li id="proj images" key={proj.title}>
                                 <Link href={`${proj.href}`} target="_blank">
-                                    <Image src={proj.src} alt={proj.title} className={` `} />
+                                    <Image src={proj.src} alt={proj.title} className={`${proj.h} `} />
                                 </Link>
                                 <div id="proj tools" className="flex flex-col pt-1">
                                     <p className="pl-2 txt-md text-gray-400 py-1">

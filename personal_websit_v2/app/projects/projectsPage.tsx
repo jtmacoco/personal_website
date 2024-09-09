@@ -3,7 +3,7 @@ import Image from "next/image";
 import { projects } from "../constants/info";
 export default function ProjectsPage() {
     const hide = (title: string) => {
-        const titles = ["Plant Social","Factoring a Large Semiprime"]
+        const titles = ["Plant Social","Factoring a Large Semiprime","Game Controller Attachment"]
         if (titles.includes(title)) {
             return 'hidden'
         }
@@ -23,7 +23,7 @@ export default function ProjectsPage() {
                         <ul key={index} className={`relative sm:block border border-white h-[510px]`}>
                             <li id="proj images" key={proj.title}>
                                 <Link href={`${proj.href}`} target="_blank">
-                                    <Image src={proj.src} alt={proj.title} className={` `} />
+                                    <Image src={proj.src} alt={proj.title} className={`${proj.h} `} />
                                 </Link>
                                 <div id="proj tools" className="flex flex-col pt-1">
                                     <p className="pl-2 txt-md text-gray-400 py-1">
