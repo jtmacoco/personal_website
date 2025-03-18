@@ -31,6 +31,7 @@ import plant_social_lookup from "../images/plant_social_lookup.png"
 import plant_social_main from "../images/plant_social_main.png"
 import plant_social_picture from "../images/plant_social_picture.png"
 import coinable from  "../images/coinable.svg"
+import particle_sim from "../images/particle-sim.png"
 import mongoDB_logo from "../images/mongoDB.svg"
 import { VscTools } from "react-icons/vsc"
 export const navLinks = [
@@ -121,6 +122,15 @@ export const skill = [
 ]
 export const projects = [
     {
+        src: particle_sim,
+        title: "N-Bodies Simulation",
+        description:"Developed an n-bodies simulator using openGL create a graphics pipleine for rendering. Paralized the the simulation in CUDA resulting in a 14x increase in particle creation.",
+        h:"h-100",
+        href:"https://github.com/jtmacoco/n-bodies_sim",
+        github:"https://github.com/jtmacoco/n-bodies_sim",
+        tools:"C++, CUDA, OpenGL",
+    },
+    {
         src: controller1,
         title: "Game Controller Attachment",
         description:" Desgined a simple game controller that attaches to the back of a phone using mag safe magnets. This allows for users to play games similar to the Xperia phone.",
@@ -134,7 +144,7 @@ export const projects = [
         title: "Stock-Predictor",
         description: "Users can check predicted stock prices, manage personal portfolios, track portfolio data, and compare predicted vs actual prices. Note: Due to hosting on a Raspberry Pi, loading times may vary based on your location.",
         h: "h-100",
-        href: "https://www.stock-predictor.com/",
+        href: "https://github.com/jtmacoco/Capstone",
         github: "https://github.com/jtmacoco/Capstone",
         tools: "django python docker gcp/raspi-4",
     },
