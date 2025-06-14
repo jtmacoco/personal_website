@@ -189,13 +189,12 @@ export const projects = [
 export const experience_info = [
     {
         title:"Full Stack Software Engineer Intern",
-        date:"Febuary2024-present",
+        date:"Febuary2024 - June 2024",
         description:[
-           "Developed front and back end of a mobile application using Dart, Flutter, Node.js, AWS, and MongoDB",
-           "Implemented email verification system utilizing Amazon Simple Email Service, resulting in reliable and secure communication within seconds for a seamless user authentication across a large platform",
-           "Devised a RESTful API for efficient retrieval, storage, and updating of database records, delivering streamlined data management and scalability",
-           "Designed and Implemented database architecture in MongoDB resulting in efficient data management and organization",
-           "Created and managed a reverse proxy server using NGINX to efficiently route HTTPS requests to backend MongoDB database, optimizing performance and security",
+            "Implemented email verification system utilizing Amazon Simple Email Service, resulting in reliable and secure communication within seconds for a seamless user authentication",
+            "Devised a RESTful API with JavaScript for efficient retrieval, storage, and updating of database records, delivering streamlined data management and scalability", 
+            "Formulated and implemented database architecture in MongoDB resulting in efficient data management",
+            "Setup NGINX reverse proxy for load balancing, improving backend efficiency, scalability, and security",
         ],
         src:coinable,
         py: "py-1",
@@ -204,8 +203,8 @@ export const experience_info = [
         company:"Coinable",
     },
     {
-        title: "Computer Science Expert AI Training",
-        date: "May 2023 - present",
+        title: "AI Trainer",
+        date: "May 2023 - Febuary 2024",
         description: [
             "Trained machine learning models on how to code in python and C, resolving issues that occur during training", 
             "Conducted thorough code evaluations for optimal efficiency",
