@@ -3,7 +3,7 @@ import Image from "next/image"
 import Link from "next/link"
 export default function Projects() {
     const hide = (title: string) => {
-        const titles = ["Plant Social","Game Controller Attachment"]
+        const titles = ["Plant Social","Game Controller Attachment","Lander Game"]
         if (titles.includes(title)) {
             return 'hidden'
         }

@@ -3,7 +3,7 @@ import Image from "next/image";
 import { projects } from "../constants/info";
 export default function ProjectsPage() {
     const hide = (title: string) => {
-        const titles = ["Plant Social","Factoring a Large Semiprime","Game Controller Attachment"]
+        const titles = ["Plant Social","Factoring a Large Semiprime","Game Controller Attachment","Lander Game"]
         if (titles.includes(title)) {
             return 'hidden'
         }

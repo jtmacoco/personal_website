@@ -30,9 +30,10 @@ import plant_social_login from "../images/plant_social_login.png"
 import plant_social_lookup from "../images/plant_social_lookup.png"
 import plant_social_main from "../images/plant_social_main.png"
 import plant_social_picture from "../images/plant_social_picture.png"
-import coinable from  "../images/coinable.svg"
+import coinable from "../images/coinable.svg"
 import particle_sim from "../images/particle-sim.png"
 import mongoDB_logo from "../images/mongoDB.svg"
+import lander from "../images/lander_game.png"
 import { VscTools } from "react-icons/vsc"
 export const navLinks = [
     {
@@ -124,21 +125,22 @@ export const projects = [
     {
         src: particle_sim,
         title: "N-Bodies Simulation",
-        description:"Developed an n-bodies simulator using openGL create a graphics pipleine for rendering. Paralized the the simulation in CUDA resulting in a 14x increase in particle creation.",
-        h:"h-100",
-        href:"https://github.com/jtmacoco/n-bodies_sim",
-        github:"https://github.com/jtmacoco/n-bodies_sim",
-        tools:"C++, CUDA, OpenGL",
+        description: "Developed an n-bodies simulator using openGL create a graphics pipleine for rendering. Paralized the the simulation in CUDA resulting in a 14x increase in particle creation.",
+        h: "h-100",
+        href: "https://github.com/jtmacoco/n-bodies_sim",
+        github: "https://github.com/jtmacoco/n-bodies_sim",
+        tools: "C++, CUDA, OpenGL",
     },
     {
-        src: controller1,
-        title: "Game Controller Attachment",
-        description:" Desgined a simple game controller that attaches to the back of a phone using mag safe magnets. This allows for users to play games similar to the Xperia phone.",
-        h:"h-60",
-        href:"https://www.thingiverse.com/thing:6760179",
-        github:"",
-        tools:"Fusion 360, 3d printer",
+        src: lander,
+        title: "Lander Game",
+        description: "Helped develop a 3D lander game, where the goal is to land on different landing pads and to avoid colliding into the terrain",
+        h: "h-50",
+        href: "https://www.youtube.com/watch?v=_90nc81bVAY",
+        github: "",
+        tools: "openFrameworks OpenGL C++",
     },
+
     {
         src: stock_predictor,
         title: "Stock-Predictor",
@@ -147,6 +149,15 @@ export const projects = [
         href: "https://github.com/jtmacoco/Capstone",
         github: "https://github.com/jtmacoco/Capstone",
         tools: "django python docker gcp/raspi-4",
+    },
+    {
+        src: controller1,
+        title: "Game Controller Attachment",
+        description: " Desgined a simple game controller that attaches to the back of a phone using mag safe magnets. This allows for users to play games similar to the Xperia phone.",
+        h: "h-60",
+        href: "https://www.thingiverse.com/thing:6760179",
+        github: "",
+        tools: "Fusion 360, 3d printer",
     },
     {
         src: movieMatch,
@@ -178,43 +189,43 @@ export const projects = [
     },
     {
         src: personal_site,
-        title:"Personal Website" ,
-        description:"You have most likely been to my site this is here incase you would like to view the code I used to develop this site.",
+        title: "Personal Website",
+        description: "You have most likely been to my site this is here incase you would like to view the code I used to develop this site.",
         h: "h-100",
-        href:"/",
-        github:"https://github.com/jtmacoco/personal_website_v2",
+        href: "/",
+        github: "https://github.com/jtmacoco/personal_website_v2",
         tools: "nextjs typescript"
     }
 ];
 export const experience_info = [
     {
-        title:"Full Stack Software Engineer Intern",
-        date:"Febuary2024 - June 2024",
-        description:[
+        title: "Full Stack Software Engineer Intern",
+        date: "Febuary2024 - June 2024",
+        description: [
             "Implemented email verification system utilizing Amazon Simple Email Service, resulting in reliable and secure communication within seconds for a seamless user authentication",
-            "Devised a RESTful API with JavaScript for efficient retrieval, storage, and updating of database records, delivering streamlined data management and scalability", 
+            "Devised a RESTful API with JavaScript for efficient retrieval, storage, and updating of database records, delivering streamlined data management and scalability",
             "Formulated and implemented database architecture in MongoDB resulting in efficient data management",
             "Setup NGINX reverse proxy for load balancing, improving backend efficiency, scalability, and security",
         ],
-        src:coinable,
+        src: coinable,
         py: "py-1",
-        location:"Remote",
-        bg:"#5546FF",
-        company:"Coinable",
+        location: "Remote",
+        bg: "#5546FF",
+        company: "Coinable",
     },
     {
         title: "AI Trainer",
         date: "May 2023 - Febuary 2024",
         description: [
-            "Trained machine learning models on how to code in python and C, resolving issues that occur during training", 
+            "Trained machine learning models on how to code in python and C, resolving issues that occur during training",
             "Conducted thorough code evaluations for optimal efficiency",
             "Documented and delivered clear explanations of the model output",
         ],
         src: remotask_logo,
         py: "py-1",
         location: "Remote",
-        bg:"white",
-        company:"Remotasks",
+        bg: "white",
+        company: "Remotasks",
     },
     {
         title: "Warehouse Clerk",
@@ -226,8 +237,8 @@ export const experience_info = [
         src: amazon_logo,
         py: "py-1",
         location: "San Leandro, CA",
-        bg:"white",
-        company:"Amazon",
+        bg: "white",
+        company: "Amazon",
     },
     {
         title: "Warehouse Clerk",
@@ -239,8 +250,8 @@ export const experience_info = [
         src: amazon_logo,
         py: "py-1",
         location: "San Leandro, CA",
-        bg:"white",
-        company:"Amazon",
+        bg: "white",
+        company: "Amazon",
     },
     {
         title: "Sales Associate",
@@ -252,8 +263,8 @@ export const experience_info = [
         src: macys_logo,
         py: "py-6",
         location: "San Leandro, CA",
-        bg:"white",
-        company:"Macy's",
+        bg: "white",
+        company: "Macy's",
     },
     {
         title: "Smooth Barista",
@@ -265,8 +276,8 @@ export const experience_info = [
         src: jamba,
         py: "py-0",
         location: "Pleasanton, CA",
-        bg:"white",
-        company:"Jamba Juice",
+        bg: "white",
+        company: "Jamba Juice",
     },
     {
         title: "Sales Associate",
@@ -278,8 +289,8 @@ export const experience_info = [
         src: jcp_logo,
         py: "py-6",
         location: "Pleasanton, CA",
-        bg:"white",
-        company:"JCPenny",
+        bg: "white",
+        company: "JCPenny",
     },
 ]
 export const plant_social_info = [
@@ -291,24 +302,24 @@ export const plant_social_info = [
         ],
         images: [
             {
-                src:  plant_social_home ,
+                src: plant_social_home,
                 alt: "home"
             },
             {
-                src:  plant_social_login ,
+                src: plant_social_login,
                 alt: "login"
 
             },
             {
-                src:  plant_social_picture ,
+                src: plant_social_picture,
                 alt: "picture"
             },
             {
-                src:  plant_social_lookup ,
+                src: plant_social_lookup,
                 alt: "lookup"
             },
             {
-                src:  plant_social_main ,
+                src: plant_social_main,
                 alt: "main"
             },
         ]
