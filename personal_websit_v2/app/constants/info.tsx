@@ -34,7 +34,7 @@ import coinable from "../images/coinable.svg"
 import particle_sim from "../images/particle-sim.png"
 import mongoDB_logo from "../images/mongoDB.svg"
 import lander from "../images/lander_game.png"
-import { VscTools } from "react-icons/vsc"
+import codebase_navigator from "../images/codebase-navigator.png"
 export const navLinks = [
     {
         id: "home",
@@ -123,6 +123,15 @@ export const skill = [
 ]
 export const projects = [
     {
+        src: codebase_navigator,
+        title: "LLM Codebase Navigator",
+        description: "Developed an AI powered Codebase Navigator using a RAG pipeline to help better navigate and better understand codebases",
+        h: "h-100",
+        href: "https://github.com/jtmacoco/Codebase-Navigator",
+        github: "https://github.com/jtmacoco/Codebase-Navigator",
+        tools: "Typescript, FastAPI, HuggingFace, Pinecone",
+    },
+    {
         src: particle_sim,
         title: "N-Bodies Simulation",
         description: "Developed an n-bodies simulator using openGL create a graphics pipleine for rendering. Paralized the the simulation in CUDA resulting in a 14x increase in particle creation.",
@@ -138,7 +147,7 @@ export const projects = [
         h: "h-50",
         href: "https://www.youtube.com/watch?v=_90nc81bVAY",
         github: "",
-        tools: "openFrameworks OpenGL C++",
+        tools: "OpenFrameworks OpenGL C++",
     },
 
     {
