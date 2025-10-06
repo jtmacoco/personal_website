@@ -1,20 +1,4 @@
-import cLogo from "../images/cLogo.svg"
-import java_logo from "../images/java_logo.svg"
 import controller1 from "../images/controller_images/fusion1.png"
-import sql_logo from "../images/sql_logo.svg"
-import java_script_logo from "../images/java_script_logo.svg"
-import css_logo from "../images/css_logo.svg"
-import docker_logo from "../images/docker_logo.svg"
-import gcp_logo from "../images/gcp_logo.svg"
-import git_logo from "../images/git_logo.svg"
-import html_logo from "../images/html_logo.svg"
-import cLogo2 from "../images/cLogo2.svg"
-import django_logo from "../images/django_logo.svg"
-import react_logo from "../images/react_logo.svg"
-import python_logo from "../images/python_logo.svg"
-import aws from "../images/aws.svg"
-import tensorFlow_logo from "../images/tensorFlow_logo.svg"
-//import linux_logo from "../images/linux_logo.svg"
 import stock_predictor from "../images/stock_predictor.svg"
 import movieMatch from "../images/movie_match.svg"
 import plantSocial from "../images/plant_social2.svg"
@@ -32,17 +16,14 @@ import plant_social_main from "../images/plant_social_main.png"
 import plant_social_picture from "../images/plant_social_picture.png"
 import coinable from "../images/coinable.svg"
 import particle_sim from "../images/particle-sim.png"
-import mongoDB_logo from "../images/mongoDB.svg"
 import lander from "../images/lander_game.png"
 import codebase_navigator from "../images/codebase-navigator.png"
+import dist_editor from "../images/dist-editor.png"
+import synthetic_malware from "../images/Synthetic_Malware.svg"
 export const navLinks = [
     {
         id: "home",
         title: "Home"
-    },
-    {
-        id: "skills",
-        title: "Skills"
     },
     {
         id: "projects",
@@ -53,88 +34,40 @@ export const navLinks = [
         title: "Experience"
     }
 ];
-export const about = "I am from the San Francisco Bay Area and am pursuing a master's degree in computer science at San Jose State University this coming fall, 2024. I obtained my bachelor's in computer science from Chico State in 2023. With the skills that I received from my undergraduate studies, I have found work as an AI generation trainer and a full-stack software engineer. My work and school experience helped me sharpen my technical skills and provided me with a deep understanding of agile project management, web/app development, data manipulation, and software architecture."
+export const about = "I am a computer science graduate from Chico State (2023) and a current master’s student at San Jose State University, pursuing research on generating synthetic malware samples to improve cybersecurity model robustness. My academic and full-stack software engineer experience has strengthened my skills in machine learning, distributed systems, and end-to-end web application development. I’m passionate about research in machine learning and building intelligent, scalable AI systems that solve complex real-world problems."
 
-export const skill = [
-    {
-        src: cLogo2,
-        title: "C"
-    },
-    {
-        src: cLogo,
-        title: "C++",
-    },
-    {
-        src: java_logo,
-        title: "Java"
-    },
-    {
-        src: sql_logo,
-        title: "SQL"
-    },
-    {
-        src: python_logo,
-        title: "Python"
-    },
-    {
-        src: css_logo,
-        title: "CSS"
-    },
-    {
-        src: html_logo,
-        title: "HTML"
-    },
-    {
-        src: git_logo,
-        title: "Git"
-    },
-    {
-        src: java_script_logo,
-        title: "JavaScript"
-    },
-    {
-        src: gcp_logo,
-        title: "GCP"
-    },
-    {
-        src: django_logo,
-        title: "Django"
-    },
-    {
-        src: react_logo,
-        title: "React"
-    },
-    {
-        src: mongoDB_logo,
-        title: "mongoDB"
-    },
-    {
-        src: aws,
-        title: "AWS"
-    },
-    {
-        src: docker_logo,
-        title: "Docker"
-    },
-    {
-        src: tensorFlow_logo,
-        title: "TensorFlow"
-    }
-]
 export const projects = [
+    {
+        src: dist_editor,
+        title: "Distributed Code Editor",
+        description: "Built a distributed collaborative editor that allows multiple users to code on the same document in real time conflict free. The system is designed for high availability and fault tolerance, efficiently distributing traffic to handle heavy loads seamlessly.",
+        h: "h-100",
+        href: "",
+        github: "https://github.com/jtmacoco/Distributed-Code-Editor",
+        tools: "Golang, Node.js, Next.js, AWS, Docker",
+    },
+    {
+        src: synthetic_malware,
+        title: "Synthetic Malware Images",
+        description: "Designed a Conditional GAN to generate synthetic malware images. Then developed a CNN classifier to test the synthetic malware images generated.",
+        h: "h-100",
+        href: "",
+        github: "https://github.com/jtmacoco/Synthetic-Malware-Images",
+        tools: "PyTorch, Python",
+    },
     {
         src: codebase_navigator,
         title: "LLM Codebase Navigator",
-        description: "Developed an AI powered Codebase Navigator using a RAG pipeline to help better navigate and better understand codebases",
+        description: "Developed an AI-powered Codebase Navigator using a RAG pipeline to help users explore, search, and understand large codebases. Delivered semantic search, context-aware Q&A, and fast per-repo indexing for efficient, intuitive code exploration.",
         h: "h-100",
-        href: "https://github.com/jtmacoco/Codebase-Navigator",
+        href: "",
         github: "https://github.com/jtmacoco/Codebase-Navigator",
-        tools: "Typescript, FastAPI, HuggingFace, Pinecone",
+        tools: "Next.js, FastAPI, HuggingFace, Pinecone",
     },
     {
         src: particle_sim,
         title: "N-Bodies Simulation",
-        description: "Developed an n-bodies simulator using openGL create a graphics pipleine for rendering. Paralized the the simulation in CUDA resulting in a 14x increase in particle creation.",
+        description: "Developed an n-bodies simulator using openGL create a graphics pipleine for rendering. Paralized the the simulation in CUDA resulting in a 10x increase in particle creation.",
         h: "h-100",
         href: "https://github.com/jtmacoco/n-bodies_sim",
         github: "https://github.com/jtmacoco/n-bodies_sim",
@@ -143,21 +76,21 @@ export const projects = [
     {
         src: lander,
         title: "Lander Game",
-        description: "Helped develop a 3D lander game, where the goal is to land on different landing pads and to avoid colliding into the terrain",
+        description: "Helped develop a 3D lander game, where the goal is to land on different landing pads and to avoid colliding into the terrain. Where my contributions where handling shaders, octree, particle generation, collision detection, and movement using Euler integration",
         h: "h-50",
         href: "https://www.youtube.com/watch?v=_90nc81bVAY",
         github: "",
-        tools: "OpenFrameworks OpenGL C++",
+        tools: "OpenFrameworks, OpenGL, C++",
     },
 
     {
         src: stock_predictor,
         title: "Stock-Predictor",
-        description: "Users can check predicted stock prices, manage personal portfolios, track portfolio data, and compare predicted vs actual prices. Note: Due to hosting on a Raspberry Pi, loading times may vary based on your location.",
+        description: "Developed a website that will predict stock market closing value for any stock using an LSTM. Users can create their own portfolios to monitor the predictions of specific stocks and compare the predicted values with actual values",
         h: "h-100",
-        href: "https://github.com/jtmacoco/Capstone",
+        href: "",
         github: "https://github.com/jtmacoco/Capstone",
-        tools: "django python docker gcp/raspi-4",
+        tools: "Django, Python, Docker, GCP, TensorFlow",
     },
     {
         src: controller1,
@@ -175,7 +108,7 @@ export const projects = [
         h: "h-100",
         href: "https://project-moviematch.com/",
         github: "https://github.com/jtmacoco/movie_match_v2",
-        tools: "react javascript firebase",
+        tools: "React, Javascript, Firebase",
 
     },
     {
@@ -184,8 +117,8 @@ export const projects = [
         description: "The project allows users to share data and other plant information with people. Users can also take a picture of a plant, and the application will identify the plant type; if it is identified wrong, users may adjust it themselves.",
         h: "h-100",
         href: "/plantSocial",
-        github: "/plantSocial",
-        tools: "flutter dart firebase python",
+        github: "",
+        tools: "Flutter, Dart, Firebase, Python,",
     },
     {
         src: parallel,
@@ -193,8 +126,8 @@ export const projects = [
         description: "For this project, I achieved speed up when finding the factors of a large semi-prime. This is the basic idea for cryptography strength used in the encryption and decryption of keys. This project's challenge is finding the original large primes used to produce the semi-prime. The tools that I used were C++ and OpenMP.",
         h: "h-30",
         href: "/parallel",
-        github: "/parallel",
-        tools: "c++ openmp",
+        github: "",
+        tools: "C++, OpenMP",
     },
     {
         src: personal_site,
@@ -203,7 +136,7 @@ export const projects = [
         h: "h-100",
         href: "/",
         github: "https://github.com/jtmacoco/personal_website_v2",
-        tools: "nextjs typescript"
+        tools: "Nextjs, Typescript"
     }
 ];
 export const experience_info = [
@@ -211,10 +144,10 @@ export const experience_info = [
         title: "Full Stack Software Engineer Intern",
         date: "Febuary2024 - June 2024",
         description: [
-            "Implemented email verification system utilizing Amazon Simple Email Service, resulting in reliable and secure communication within seconds for a seamless user authentication",
-            "Devised a RESTful API with JavaScript for efficient retrieval, storage, and updating of database records, delivering streamlined data management and scalability",
-            "Formulated and implemented database architecture in MongoDB resulting in efficient data management",
-            "Setup NGINX reverse proxy for load balancing, improving backend efficiency, scalability, and security",
+            "Built secure email verification system with AWS SES, reducing onboarding friction for new users",
+            "Designed and deployed RESTful APIs (Node.js + MongoDB) supporting scalable CRUD operations",
+            "Architected MongoDB schemas that improved query efficiency and reduced data duplication",
+            "Delivered responsive frontend login and signup flows in Flutter, streamlining user authentication",
         ],
         src: coinable,
         py: "py-1",

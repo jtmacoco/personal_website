@@ -13,9 +13,6 @@ export default function Page() {
         <div id="home">
           <Home />
         </div>
-        <div id="skills">
-          <Skills />
-        </div>
         <div id="projects">
           <Projects />
         </div>
