@@ -1,6 +1,5 @@
 "use client"
 import Home from './sections/Home';
-import Skills from './sections/Skills';
 import Navbar from './components/navbar';
 import Projects from './sections/Projects';
 import Experience from './sections/Experience';
