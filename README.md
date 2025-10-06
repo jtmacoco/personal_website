@@ -1,1 +1,2 @@
-# personal_website_v2
+# Personal Website
+> Welcome to my personal website repo
