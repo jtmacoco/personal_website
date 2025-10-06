@@ -67,7 +67,7 @@ export const projects = [
     {
         src: particle_sim,
         title: "N-Bodies Simulation",
-        description: "Developed an n-bodies simulator using openGL create a graphics pipleine for rendering. Paralized the the simulation in CUDA resulting in a 10x increase in particle creation.",
+        description: "Developed an N-bodies simulator with real-time visualization using OpenGL and GLSL shaders. Parallelized computations with CUDA and particle generation with OpenMP, achieving 10× and 3× speedups respectively.",
         h: "h-100",
         href: "https://github.com/jtmacoco/n-bodies_sim",
         github: "https://github.com/jtmacoco/n-bodies_sim",
@@ -76,11 +76,11 @@ export const projects = [
     {
         src: lander,
         title: "Lander Game",
-        description: "Helped develop a 3D lander game, where the goal is to land on different landing pads and to avoid colliding into the terrain. Where my contributions where handling shaders, octree, particle generation, collision detection, and movement using Euler integration",
+        description: "Contributed to a 3D lander game by implementing shaders, octree structures, particle generation, collision detection, and Euler-based movement.",
         h: "h-50",
         href: "https://www.youtube.com/watch?v=_90nc81bVAY",
         github: "",
-        tools: "OpenFrameworks, OpenGL, C++",
+        tools: "C++, OpenFrameworks, OpenGL, GLSL",
     },
 
     {
