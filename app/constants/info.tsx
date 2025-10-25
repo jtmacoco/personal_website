@@ -79,7 +79,7 @@ export const projects = [
         description: "Contributed to a 3D lander game by implementing shaders, octree structures, particle generation, collision detection, and Euler-based movement.",
         h: "h-50",
         href: "https://www.youtube.com/watch?v=_90nc81bVAY",
-        github: "",
+        github: "https://github.com/jtmacoco/CS134-Final-Project",
         tools: "C++, OpenFrameworks, OpenGL, GLSL",
     },
 
