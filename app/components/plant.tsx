@@ -1,23 +1,21 @@
 "use client"
-import { motion } from "framer-motion"
+import { motion ,easeInOut} from "framer-motion"
 export default function Plant() {
-    const pathVariants = {
-        hidden: {
-            opacity: 0,
-            pathLength: 0
+const pathVariants = {
+    hidden: {
+        opacity: 0,
+        pathLength: 0
+    },
+    visible: {
+        opacity: 1,
+        pathLength: 1,
+        transition: {
+            duration: 3,
+            ease: easeInOut, 
         },
-        visible: {
-            opacity: 1,
-
-            pathLength: 1,
-            transition: {
-                duration: 3,
-                ease: "easeInOut",
-
-            },
-            strokeWidth: 8,
-        }
+        strokeWidth: 8,
     }
+}
     return (
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             width={200} height={200}
