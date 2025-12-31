@@ -144,10 +144,12 @@ export const experience_info = [
         title: "Full Stack Software Engineer Intern",
         date: "Febuary2024 - June 2024",
         description: [
-            "Built secure email verification system with AWS SES, reducing onboarding friction for new users",
-            "Designed and deployed RESTful APIs (Node.js + MongoDB) supporting scalable CRUD operations",
-            "Architected MongoDB schemas that improved query efficiency and reduced data duplication",
-            "Delivered responsive frontend login and signup flows in Flutter, streamlining user authentication",
+            "Designed and implemented responsive UI pages in Flutter for user onboarding, including login/sign-up flows and interactive preference-selection interfaces",
+            "Developed and integrated RESTful APIs to manage complex data transfers, including user profiles and media assets",
+            "Assisted in Re-architected and optimized the backend database schema to improve data integrity and query performance",
+            "Built a modular backend using Node.js, ensuring high maintainability and easy integration for future system components",
+            "Application hosting using Nginx and AWS EC2, implementing Load Balancing to ensure high availability and system reliability",
+            "Integrated secure Email Verification to enhance user authentication and platform security"
         ],
         src: coinable,
         py: "py-1",
@@ -159,9 +161,11 @@ export const experience_info = [
         title: "AI Trainer",
         date: "May 2023 - Febuary 2024",
         description: [
-            "Trained machine learning models on how to code in python and C, resolving issues that occur during training",
-            "Conducted thorough code evaluations for optimal efficiency",
-            "Documented and delivered clear explanations of the model output",
+            "Facilitated the training of advanced generative AI models, focusing on refining response quality and code fluency",
+            "Conducted audits of model-generated code to ensure syntax accuracy, security, and execution efficiency",
+            "Developed comprehensive technical documentation explaining complex model outputs",
+            "Helped processes to align model behavior with safety and performance standards",
+
         ],
         src: remotask_logo,
         py: "py-1",
