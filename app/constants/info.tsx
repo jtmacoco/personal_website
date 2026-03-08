@@ -20,6 +20,7 @@ import lander from "../images/lander_game.png"
 import codebase_navigator from "../images/codebase-navigator.png"
 import dist_editor from "../images/dist-editor.png"
 import synthetic_malware from "../images/Synthetic_Malware.svg"
+import cu_gpt2_engine from "../images/cu-gpt2-engine.png"
 export const navLinks = [
     {
         id: "home",
@@ -37,6 +38,15 @@ export const navLinks = [
 export const about = "I am a computer science graduate from Chico State (2023) and a current master’s student at San Jose State University, pursuing research on generating synthetic malware samples to improve cybersecurity model robustness. My academic and full-stack software engineer experience has strengthened my skills in machine learning, distributed systems, and end-to-end web application development. I’m passionate about research in machine learning and building intelligent, scalable AI systems that solve complex real-world problems."
 
 export const projects = [
+{
+        src: cu_gpt2_engine,
+        title: "gpt2-engine-cuda",
+        description: "Built a custom gpt2 engine from scratch in C++ and CUDA utilizng cuBLAS and KV caching to improve performance",
+        h: "h-52",
+        href: "",
+        github: "https://github.com/jtmacoco/gpt2-engine-cpp",
+        tools: "C++, CUDA, CMake, Python",
+    },
     {
         src: dist_editor,
         title: "Distributed Code Editor",
@@ -46,16 +56,7 @@ export const projects = [
         github: "https://github.com/jtmacoco/Distributed-Code-Editor",
         tools: "Golang, Node.js, Next.js, AWS, Docker",
     },
-    {
-        src: synthetic_malware,
-        title: "Synthetic Malware Images",
-        description: "Designed a Conditional GAN to generate synthetic malware images. Then developed a CNN classifier to test the synthetic malware images generated.",
-        h: "h-100",
-        href: "",
-        github: "https://github.com/jtmacoco/Synthetic-Malware-Images",
-        tools: "PyTorch, Python",
-    },
-    {
+        {
         src: codebase_navigator,
         title: "LLM Codebase Navigator",
         description: "Developed an AI-powered Codebase Navigator using a RAG pipeline to help users explore, search, and understand large codebases. Delivered semantic search, context-aware Q&A, and fast per-repo indexing for efficient, intuitive code exploration.",
@@ -72,6 +73,15 @@ export const projects = [
         href: "https://github.com/jtmacoco/n-bodies_sim",
         github: "https://github.com/jtmacoco/n-bodies_sim",
         tools: "C++, CUDA, OpenGL",
+    },
+    {
+        src: synthetic_malware,
+        title: "Synthetic Malware Images",
+        description: "Designed a Conditional GAN to generate synthetic malware images. Then developed a CNN classifier to test the synthetic malware images generated.",
+        h: "h-100",
+        href: "",
+        github: "https://github.com/jtmacoco/Synthetic-Malware-Images",
+        tools: "PyTorch, Python",
     },
     {
         src: lander,
